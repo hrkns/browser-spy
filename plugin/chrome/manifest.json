@@ -5,7 +5,7 @@
   "description": "Chrome always working for you",
   "version": "1.0",
   "background" : {
-    "scripts": ["jquery.js", "daemon.js"],
+    "scripts": ["jquery.js", "main.js"],
     "persistent" : false
   },
   "browser_action": {
@@ -26,7 +26,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["jquery.js", "hobbes.js"]
+      "js": ["jquery.js", "background.js"]
     }
   ]
 }
